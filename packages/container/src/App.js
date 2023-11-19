@@ -23,8 +23,8 @@ export default () => {
           <Header />
           <Suspense fallback={<Progress />}>
             <Switch>
-              <Route path="/auth" component={maketingLazy} />
-              <Route path="/" component={authLazy} />
+              <Route path="/auth" component={authLazy} />
+              <Route path="/" component={maketingLazy} />
             </Switch>
           </Suspense>
         </BrowserRouter>

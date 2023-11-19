@@ -8,7 +8,7 @@ export default function AuthApp() {
 
     useEffect(() => {
         const{ onParentNavigate } = mount(ref.current, {
-          initialPath: history.pathname,
+          initialPath: history.location.pathname,
           onNavigate: ({ pathname: nextPathname }) => {
             const { pathname } = history.location;
             if(pathname !== nextPathname) {
